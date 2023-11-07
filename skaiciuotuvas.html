@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skaičiuotuvas</title>
+  <link rel="stylesheet" type="text/css" href="skaiciuotuvas.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+      <button class="operator" onclick="backspace()">←</button>
+      <button class="operator" onclick="square()">x<sup>2</sup></button>
+      <button class="operator" onclick="squareRoot()">√</button>
+      <button class="operator" onclick="clearDisplay()">C</button>
+      <button class="operator" onclick="percent()">%</button>
+      <button class="operator" onclick="power()">x<sup>y</sup></button>
+      <button class="operator" onclick="calculateFactorial()">n!</button>
+      <button class="operator" onclick="appendToDisplay('/')">/</button>
+      <button class="number" onclick="appendToDisplay('7')">7</button>
+      <button class="number" onclick="appendToDisplay('8')">8</button>
+      <button class="number" onclick="appendToDisplay('9')">9</button>
+      <button class="operator" onclick="appendToDisplay('*')">*</button>
+      <button class="number" onclick="appendToDisplay('4')">4</button>
+      <button class="number" onclick="appendToDisplay('5')">5</button>
+      <button class="number" onclick="appendToDisplay('6')">6</button>
+      <button class="operator" onclick="appendToDisplay('-')">-</button>
+      <button class="number" onclick="appendToDisplay('1')">1</button>
+      <button class="number" onclick="appendToDisplay('2')">2</button>
+      <button class="number" onclick="appendToDisplay('3')">3</button>
+      <button class="operator" onclick="appendToDisplay('+')">+</button>
+      <button class="operator" onclick="toggleSign()">+/-</button>
+      <button class="number" onclick="appendToDisplay('0')">0</button>
+      <button class="operator" onclick="appendToDisplay('.')">.</button>
+      <button class="operator" onclick="calculate()">=</button>
+
+    </div>
+  </div>
+  <script src="skaiciuotuvas.js"></script>
+</body>
+</html>
